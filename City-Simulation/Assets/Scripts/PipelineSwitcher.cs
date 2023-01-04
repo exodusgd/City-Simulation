@@ -6,40 +6,50 @@ using UnityEngine.Rendering;
 public class PipelineSwitcher : MonoBehaviour
 {
     [SerializeField]
-    private RenderPipelineAsset vertexAsset;
+    private RenderPipelineAsset vertexPipeline;
 
     [SerializeField]
-    private RenderPipelineAsset pixelAsset;
+    private RenderPipelineAsset pixelPipeline;
 
     [SerializeField]
-    private GameObject sphere;
+    private GameObject[] smoothObjects;
 
     [SerializeField]
-    private GameObject sphereFlat;
+    private GameObject[] flatObjects;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            sphere.SetActive(false);
-            sphereFlat.SetActive(true);
+            useFlatObjects(true);
+            QualitySettings.renderPipeline = vertexPipeline;
             Debug.Log("Using flat shading");
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            sphere.SetActive(true);
-            sphereFlat.SetActive(false);
-            QualitySettings.renderPipeline = vertexAsset;
+            useFlatObjects(false);
+            QualitySettings.renderPipeline = vertexPipeline;
             Debug.Log("Using vertex shading");
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            sphere.SetActive(true);
-            sphereFlat.SetActive(false);
-            QualitySettings.renderPipeline = pixelAsset;
+            useFlatObjects(false);
+            QualitySettings.renderPipeline = pixelPipeline;
             Debug.Log("Using pixel shading");
+        }
+    }
+
+    // Method that switches visibility between flat and smooth objects
+    private void useFlatObjects(bool value)
+    {
+        foreach (GameObject obj in flatObjects)
+        {
+            obj.SetActive(value);
+        }
+        foreach (GameObject obj in smoothObjects)
+        {
+            obj.SetActive(!value);
         }
     }
 }
