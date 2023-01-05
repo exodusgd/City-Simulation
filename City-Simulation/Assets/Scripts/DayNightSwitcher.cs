@@ -9,6 +9,7 @@ public class DayNightSwitcher : MonoBehaviour
     [SerializeField]
     private Material skyBoxNight;
 
+    private bool isDay;
 
     private LampPostScript[] lampPosts;
 
@@ -34,6 +35,7 @@ public class DayNightSwitcher : MonoBehaviour
 
     public void setDay()
     {
+        isDay = true;
         foreach (LampPostScript lampPost in lampPosts)
         {
             lampPost.setLight(false);
@@ -44,11 +46,17 @@ public class DayNightSwitcher : MonoBehaviour
 
     public void setNight()
     {
+        isDay = false;
         foreach (LampPostScript lampPost in lampPosts)
         {
             lampPost.setLight(true);
         }
         RenderSettings.skybox = skyBoxNight;
-        RenderSettings.ambientLight = new Color(0.02f, 0.02f, 0.1f);
+        RenderSettings.ambientLight = new Color(0.04f, 0.04f, 0.1f);
+    }
+
+    public bool getIsDay()
+    {
+        return isDay;
     }
 }
