@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 6682990464990580391}
   - component: {fileID: 3517939086722350712}
   - component: {fileID: 7896195201800455366}
+  - component: {fileID: 5733909636371410420}
   m_Layer: 0
   m_Name: Building 1
   m_TagString: Untagged
@@ -95,7 +96,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 1687d2b56298c9544b944a02e7e102a5, type: 3}
+  - {fileID: 2100000, guid: a983d074f89cc804f8628556e3c8eef7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130,6 +131,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.77169, y: 0.95734596, z: 0.9467798}
   m_Center: {x: 0.0008954257, y: 0.22621356, z: -0.42777112}
+--- !u!114 &5733909636371410420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7841667069864412763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: -727196734970019624, guid: 1687d2b56298c9544b944a02e7e102a5,
+    type: 3}
+  flatMesh: {fileID: -727196734970019624, guid: 33c4d5e9f9d5f3e4a85b2c3970db434e,
+    type: 3}
 --- !u!1 &8086705215663658295
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,6 +159,7 @@ GameObject:
   - component: {fileID: 6360786328160411621}
   - component: {fileID: 3629804996507259226}
   - component: {fileID: 1880176822904777730}
+  - component: {fileID: 1700539925617575485}
   m_Layer: 0
   m_Name: Building 2
   m_TagString: Untagged
@@ -192,7 +210,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -6478536213147159724, guid: 1687d2b56298c9544b944a02e7e102a5, type: 3}
+  - {fileID: 2100000, guid: b84193c22d256bd44aa2dad49813d4e5, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -227,3 +245,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.7670605, y: 0.95434594, z: 1.1327599}
   m_Center: {x: 0.036314547, y: 0.108506575, z: -0.49860176}
+--- !u!114 &1700539925617575485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8086705215663658295}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: -414328259842514737, guid: 1687d2b56298c9544b944a02e7e102a5,
+    type: 3}
+  flatMesh: {fileID: -414328259842514737, guid: 33c4d5e9f9d5f3e4a85b2c3970db434e,
+    type: 3}

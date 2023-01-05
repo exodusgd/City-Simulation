@@ -44,6 +44,7 @@ GameObject:
   - component: {fileID: 5291585414420794779}
   - component: {fileID: 1642732169584787243}
   - component: {fileID: 4240552518965484491}
+  - component: {fileID: 765289971893420634}
   m_Layer: 0
   m_Name: mainer
   m_TagString: Untagged
@@ -94,7 +95,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: 7dcc08078fa9b7b46bacd5a21df07446, type: 3}
+  - {fileID: 2100000, guid: daaafeef7b15d874d88e819b56fc5987, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -129,3 +130,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.68380004, y: 0.892208, z: 0.421227}
   m_Center: {x: -0.011912614, y: -0.013619021, z: -0.1602029}
+--- !u!114 &765289971893420634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7408764873721551610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: -6416770948968165078, guid: 7dcc08078fa9b7b46bacd5a21df07446,
+    type: 3}
+  flatMesh: {fileID: -6416770948968165078, guid: 196e269d47961654c877515c3713db2f,
+    type: 3}

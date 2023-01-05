@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 8263117383594135785}
   - component: {fileID: 3269553591851826557}
   - component: {fileID: 6279017766375737162}
+  - component: {fileID: 6676847246489822201}
   m_Layer: 0
   m_Name: main.001
   m_TagString: Untagged
@@ -142,7 +143,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4874126678125670354, guid: b00c30119db5f5742a1aca70ab96fe97, type: 3}
+  - {fileID: 2100000, guid: 98cc40fd79789dc4694528ccfe0c21f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -177,6 +178,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.25609863, y: 0.8385329, z: 0.32022002}
   m_Center: {x: -0.0042658783, y: 0.07998355, z: -0.13489102}
+--- !u!114 &6676847246489822201
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4084600054962958770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: -3210104460535108278, guid: b00c30119db5f5742a1aca70ab96fe97,
+    type: 3}
+  flatMesh: {fileID: -3210104460535108278, guid: cb66aa7e0f8e601478cd139ab2e6fca0,
+    type: 3}
 --- !u!1 &4238880334861039662
 GameObject:
   m_ObjectHideFlags: 0
@@ -188,6 +205,7 @@ GameObject:
   - component: {fileID: 1506522700745244881}
   - component: {fileID: 188797430694568849}
   - component: {fileID: 5155962480572512398}
+  - component: {fileID: 8763839200414604735}
   m_Layer: 0
   m_Name: main
   m_TagString: Untagged
@@ -238,7 +256,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4874126678125670354, guid: b00c30119db5f5742a1aca70ab96fe97, type: 3}
+  - {fileID: 2100000, guid: 98cc40fd79789dc4694528ccfe0c21f6, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -260,6 +278,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8763839200414604735
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4238880334861039662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: 1344337027531075907, guid: b00c30119db5f5742a1aca70ab96fe97,
+    type: 3}
+  flatMesh: {fileID: 1344337027531075907, guid: cb66aa7e0f8e601478cd139ab2e6fca0,
+    type: 3}
 --- !u!1 &7811859579384857448
 GameObject:
   m_ObjectHideFlags: 0

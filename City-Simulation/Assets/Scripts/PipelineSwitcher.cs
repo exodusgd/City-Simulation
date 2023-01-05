@@ -7,15 +7,15 @@ public class PipelineSwitcher : MonoBehaviour
 {
     [SerializeField]
     private RenderPipelineAsset vertexPipeline;
-
     [SerializeField]
     private RenderPipelineAsset pixelPipeline;
 
-    [SerializeField]
-    private GameObject[] smoothObjects;
+    private SwapableAssetScript[] swapables;
 
-    [SerializeField]
-    private GameObject[] flatObjects;
+    private void Start()
+    {
+        swapables = FindObjectsOfType<SwapableAssetScript>();
+    }
 
     void Update()
     {
@@ -43,13 +43,9 @@ public class PipelineSwitcher : MonoBehaviour
     // Method that switches visibility between flat and smooth objects
     private void useFlatObjects(bool value)
     {
-        foreach (GameObject obj in flatObjects)
+        foreach (SwapableAssetScript swap in swapables)
         {
-            obj.SetActive(value);
-        }
-        foreach (GameObject obj in smoothObjects)
-        {
-            obj.SetActive(!value);
+            swap.setFlatMesh(value);
         }
     }
 }

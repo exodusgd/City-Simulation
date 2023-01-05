@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8502194378737234303}
   - component: {fileID: 6798750327904481055}
   - component: {fileID: 4499890019053072503}
+  - component: {fileID: 8779008542912786579}
   m_Layer: 0
   m_Name: Bricks
   m_TagString: Untagged
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 9180892828007318148, guid: 8ad883d3972cc3144b134c6387ddee69, type: 3}
+  - {fileID: 2100000, guid: f4fca193220aa254b9e19fc7e13bf172, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,6 +84,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8779008542912786579
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 306783045134689126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: 7841338485657174301, guid: 8ad883d3972cc3144b134c6387ddee69,
+    type: 3}
+  flatMesh: {fileID: 7841338485657174301, guid: 819b1d12242e68642b5ec9144d762b30,
+    type: 3}
 --- !u!1 &1742151102502223430
 GameObject:
   m_ObjectHideFlags: 0
@@ -94,6 +111,7 @@ GameObject:
   - component: {fileID: 603912471296519050}
   - component: {fileID: 2367185326550305724}
   - component: {fileID: 7557355337170330321}
+  - component: {fileID: 8698355546471835331}
   m_Layer: 0
   m_Name: Bulbs
   m_TagString: Untagged
@@ -144,7 +162,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -1539888753809106284, guid: 8ad883d3972cc3144b134c6387ddee69, type: 3}
+  - {fileID: 2100000, guid: 8d836c2e33477254e85df2b460228034, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -166,6 +184,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8698355546471835331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1742151102502223430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: 7048642178422033237, guid: 8ad883d3972cc3144b134c6387ddee69,
+    type: 3}
+  flatMesh: {fileID: 7048642178422033237, guid: 819b1d12242e68642b5ec9144d762b30,
+    type: 3}
 --- !u!1 &2894319240402047506
 GameObject:
   m_ObjectHideFlags: 0
@@ -178,6 +212,7 @@ GameObject:
   - component: {fileID: 6221937082245925297}
   - component: {fileID: 70470620369157892}
   - component: {fileID: 6037035988767761129}
+  - component: {fileID: 5006187313498636297}
   m_Layer: 0
   m_Name: Building
   m_TagString: Untagged
@@ -228,7 +263,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 4632208036162555797, guid: 8ad883d3972cc3144b134c6387ddee69, type: 3}
+  - {fileID: 2100000, guid: 9fdec6d1299799840b8f890996a283a1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -263,6 +298,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.52867013, y: 0.6203302, z: 0.8971907}
   m_Center: {x: -0.20765823, y: -0.1378578, z: 0.9083633}
+--- !u!114 &5006187313498636297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2894319240402047506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: -4207443722817456029, guid: 8ad883d3972cc3144b134c6387ddee69,
+    type: 3}
+  flatMesh: {fileID: -4207443722817456029, guid: 819b1d12242e68642b5ec9144d762b30,
+    type: 3}
 --- !u!1 &5663882402209774205
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +326,7 @@ GameObject:
   - component: {fileID: 1550416245166863330}
   - component: {fileID: 2951762628414912098}
   - component: {fileID: 3914953516966262113}
+  - component: {fileID: 7043526016193534845}
   m_Layer: 0
   m_Name: Building black
   m_TagString: Untagged
@@ -325,7 +377,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2052740442145838358, guid: 8ad883d3972cc3144b134c6387ddee69, type: 3}
+  - {fileID: 2100000, guid: e31ff155b6b75f44baf44a8877b1777b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -360,6 +412,22 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5, y: 0.71377033, z: 0.77811}
   m_Center: {x: -0.18302217, y: -0.09148276, z: 0.08198619}
+--- !u!114 &7043526016193534845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5663882402209774205}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smoothMesh: {fileID: -682498386711897658, guid: 8ad883d3972cc3144b134c6387ddee69,
+    type: 3}
+  flatMesh: {fileID: -682498386711897658, guid: 819b1d12242e68642b5ec9144d762b30,
+    type: 3}
 --- !u!1 &5949156401514144372
 GameObject:
   m_ObjectHideFlags: 0

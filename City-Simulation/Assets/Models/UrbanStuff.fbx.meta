@@ -3,7 +3,67 @@ guid: 017ff69c96cca7447878910034e64337
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_AFG_Metalfence_1
+    second: {fileID: 2100000, guid: 62b35cdbd841df24485f1eb18b2d6f85, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_AFG_Metalfence_2
+    second: {fileID: 2100000, guid: 8c100d283d5a6944fb8433b4485d0831, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_TNR_Bench_1
+    second: {fileID: 2100000, guid: ef11d6a6874039b4aab6c7d40694ac29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_TNR_Bench_2
+    second: {fileID: 2100000, guid: a975725536a1e954c9b752ce3ab7a834, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_TNR_ParkingMeter_1
+    second: {fileID: 2100000, guid: da0b361ea1a011847ae98574f33e0bc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_TNR_PhoneBox_1
+    second: {fileID: 2100000, guid: 037e29a749eb73e4f88b21a12be8f042, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_TNR_WireFence_1
+    second: {fileID: 2100000, guid: 48cd491c01bf63c42a036c961c7886fe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_AFG_Bollard_1-2
+    second: {fileID: 2100000, guid: a0ecadc991560c64fb9ac7599f5e1b29, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_TNR_Hydrant_1
+    second: {fileID: 2100000, guid: b7d7025cd120af94b837710ad12d31ff, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_TNR_MetalFence_1
+    second: {fileID: 2100000, guid: 37edf4d8fdc55f3438a8fd9de2d0f3fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_TNR_MetalFence_2
+    second: {fileID: 2100000, guid: 7ef7fdbd2def1e94a9c94700adceb344, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: WT_NewspaperVB
+    second: {fileID: 2100000, guid: fda166a8d387bc348aa7e38eb2569b3d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -68,13 +128,13 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 0
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
+    blendShapeNormalImportMode: 0
+    normalSmoothingSource: 2
   referencedClips: []
   importAnimation: 1
   humanDescription:

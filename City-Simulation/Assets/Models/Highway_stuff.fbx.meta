@@ -3,7 +3,67 @@ guid: 05609cc441b9ca64daf46e2063c64af9
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_RoadBarrier_1
+    second: {fileID: 2100000, guid: 12d45b59a9d836f45b2ec8e55b8437c0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_RoadBarrier_2
+    second: {fileID: 2100000, guid: e5e60ec395b76dc459d49d3b27d7ecbf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_RoadCone_1-2
+    second: {fileID: 2100000, guid: ae11ff6fba5f06f4bbc2229f301e0cdd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_RoadDrum_1
+    second: {fileID: 2100000, guid: d8085a4e789b1b64eba50ee4eda50fbe, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_RoadPole_1
+    second: {fileID: 2100000, guid: c898ae51899928f4bb40b06c046b7412, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_SignDangerTurn_1-2
+    second: {fileID: 2100000, guid: 80c1a4a78bd7b82498d2ce908a39f646, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_SignHardturn_1-2
+    second: {fileID: 2100000, guid: 76ad14d726eafb84ba4ccf2477724556, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: DP_HWS_SignSpeedLim_1-3
+    second: {fileID: 2100000, guid: cacafdc3ae619e44b9c9da6a8d566609, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: GuardRail_Highway_1-2
+    second: {fileID: 2100000, guid: 38df194099d4dc44f9a132a6375e6bc0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: NP_TurnSign1
+    second: {fileID: 2100000, guid: 90c84674cf0782f4e9fb56ade0df89e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_CCS_ConcreteBlock_1-2
+    second: {fileID: 2100000, guid: a99c7d7919252b24eb116f315658dc62, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SP_HWS_RoadBarrier_1
+    second: {fileID: 2100000, guid: 6b8def72712e4ec40a1f31554d66754f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -68,13 +128,13 @@ ModelImporter:
     secondaryUVPackMargin: 4
     useFileScale: 1
   tangentSpace:
-    normalSmoothAngle: 60
+    normalSmoothAngle: 0
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
-    blendShapeNormalImportMode: 1
-    normalSmoothingSource: 0
+    blendShapeNormalImportMode: 0
+    normalSmoothingSource: 2
   referencedClips: []
   importAnimation: 1
   humanDescription:

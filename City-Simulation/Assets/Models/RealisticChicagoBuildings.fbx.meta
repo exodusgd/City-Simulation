@@ -5,6 +5,31 @@ ModelImporter:
   internalIDToNameTable: []
   externalObjects:
   - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BLACK BUILD
+    second: {fileID: 2100000, guid: e31ff155b6b75f44baf44a8877b1777b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bricks
+    second: {fileID: 2100000, guid: f4fca193220aa254b9e19fc7e13bf172, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Building
+    second: {fileID: 2100000, guid: 9fdec6d1299799840b8f890996a283a1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bulbs
+    second: {fileID: 2100000, guid: 8d836c2e33477254e85df2b460228034, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sidewalks
+    second: {fileID: 2100000, guid: 819b7218cce3f1149897447ff6840531, type: 2}
+  - first:
       type: UnityEngine:Texture2D
       assembly: UnityEngine.CoreModule
       name: Sidewalks
