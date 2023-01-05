@@ -7,7 +7,13 @@ public class GlitchManager : MonoBehaviour
     [SerializeField]
     private int dayGlitchOdds = 10;
     [SerializeField]
-    private int nightGlitchOdds = 8;
+    private int nightGlitchOdds = 6;
+
+    [SerializeField]
+    private Camera playerCamera;
+
+    [SerializeField]
+    private bool debugCanGlitch = true;
 
     private bool isInDelay = false;
     private bool isGlitching = false;
@@ -30,7 +36,7 @@ public class GlitchManager : MonoBehaviour
 
     void Update()
     {
-        if (!isInDelay && !isGlitching) 
+        if (!isInDelay && !isGlitching && debugCanGlitch) 
         {
             StartCoroutine(GlitchChanceDelay(1f));
         }
@@ -53,10 +59,8 @@ public class GlitchManager : MonoBehaviour
 
     IEnumerator ChangeShading(ShadingType shadingType, float delayTime)
     {
-        //Wait for the specified delay time before continuing.
         yield return new WaitForSeconds(delayTime);
 
-        //Do the action after the delay time has finished.
         switch (shadingType)
         {
             case ShadingType.Flat:
@@ -71,6 +75,12 @@ public class GlitchManager : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    IEnumerator SetOrthographic(bool value, float delayTime)
+    {
+        yield return new WaitForSeconds(delayTime);
+        playerCamera.orthographic = value;
     }
 
     private void GlitchChance()
@@ -102,9 +112,25 @@ public class GlitchManager : MonoBehaviour
 
     private void NightGlitch()
     {
-        pipelineSwitcher.SetFlatShading();
-        StartCoroutine(ChangeShading(ShadingType.Vertex, 2f));
-        StartCoroutine(ChangeShading(ShadingType.Pixel, 3f));
-        StartCoroutine(GlitchDelay(3f));
+        int randomNumber = Random.Range(1, 3 + 1);
+        switch (randomNumber)
+        {
+            case 1:
+            case 2:
+                pipelineSwitcher.SetFlatShading();
+                StartCoroutine(ChangeShading(ShadingType.Vertex, 2f));
+                StartCoroutine(ChangeShading(ShadingType.Pixel, 3f));
+                StartCoroutine(GlitchDelay(3f));
+                break;
+            case 3:
+                playerCamera.orthographic = true;
+                StartCoroutine(SetOrthographic(false, 2f));
+                StartCoroutine(SetOrthographic(true, 3f));
+                StartCoroutine(SetOrthographic(false, 3.5f));
+                StartCoroutine(GlitchDelay(3.5f));
+                break;
+            default:
+                break;
+        }
     }
 }

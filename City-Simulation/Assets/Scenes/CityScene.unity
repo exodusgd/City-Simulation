@@ -1757,7 +1757,7 @@ GameObject:
   - component: {fileID: 1201133164}
   - component: {fileID: 1201133165}
   m_Layer: 0
-  m_Name: ShaderManager
+  m_Name: GlitchManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1819,7 +1819,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dayGlitchOdds: 10
-  nightGlitchOdds: 5
+  nightGlitchOdds: 6
+  playerCamera: {fileID: 1001022873}
+  debugCanGlitch: 1
 --- !u!1 &1249323900
 GameObject:
   m_ObjectHideFlags: 0
