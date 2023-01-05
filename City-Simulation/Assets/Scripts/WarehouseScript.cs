@@ -13,13 +13,13 @@ public class WarehouseScript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (dayNightSwitcher.getIsDay())
+        if (dayNightSwitcher.IsDay())
         {
-            dayNightSwitcher.setNight();
+            dayNightSwitcher.SetNight();
         }
         else
         {
-            dayNightSwitcher.setDay();
+            dayNightSwitcher.SetDay();
         }
         
     }

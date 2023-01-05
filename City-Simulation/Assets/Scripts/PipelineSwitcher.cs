@@ -21,31 +21,46 @@ public class PipelineSwitcher : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            useFlatObjects(true);
-            QualitySettings.renderPipeline = vertexPipeline;
-            Debug.Log("Using flat shading");
+            SetFlatShading();
         }
 
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            useFlatObjects(false);
-            QualitySettings.renderPipeline = vertexPipeline;
-            Debug.Log("Using vertex shading");
+            SetVertexShading();
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            useFlatObjects(false);
-            QualitySettings.renderPipeline = pixelPipeline;
-            Debug.Log("Using pixel shading");
+            SetPixelShading();
         }
     }
 
     // Method that switches visibility between flat and smooth objects
-    private void useFlatObjects(bool value)
+    private void UseFlatObjects(bool value)
     {
         foreach (SwapableAssetScript swap in swapables)
         {
-            swap.setFlatMesh(value);
+            swap.SetFlatMesh(value);
         }
+    }
+
+    public void SetFlatShading()
+    {
+        UseFlatObjects(true);
+        QualitySettings.renderPipeline = vertexPipeline;
+        Debug.Log("Using flat shading");
+    }
+
+    public void SetVertexShading()
+    {
+        UseFlatObjects(false);
+        QualitySettings.renderPipeline = vertexPipeline;
+        Debug.Log("Using vertex shading");
+    }
+
+    public void SetPixelShading()
+    {
+        UseFlatObjects(false);
+        QualitySettings.renderPipeline = pixelPipeline;
+        Debug.Log("Using pixel shading");
     }
 }

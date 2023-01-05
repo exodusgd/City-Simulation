@@ -16,46 +16,46 @@ public class DayNightSwitcher : MonoBehaviour
     private void Start()
     {
         lampPosts = FindObjectsOfType<LampPostScript>();
-        setDay();
+        SetDay();
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            setDay();
+            SetDay();
             Debug.Log("Set time to Day");
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            setNight();
+            SetNight();
             Debug.Log("Set time to Night");
         }
     }
 
-    public void setDay()
+    public void SetDay()
     {
         isDay = true;
         foreach (LampPostScript lampPost in lampPosts)
         {
-            lampPost.setLight(false);
+            lampPost.SetLight(false);
         }
         RenderSettings.skybox = skyBoxDay;
         RenderSettings.ambientLight = new Color(0.84f, 0.85f, 0.86f);
     }
 
-    public void setNight()
+    public void SetNight()
     {
         isDay = false;
         foreach (LampPostScript lampPost in lampPosts)
         {
-            lampPost.setLight(true);
+            lampPost.SetLight(true);
         }
         RenderSettings.skybox = skyBoxNight;
         RenderSettings.ambientLight = new Color(0.04f, 0.04f, 0.1f);
     }
 
-    public bool getIsDay()
+    public bool IsDay()
     {
         return isDay;
     }

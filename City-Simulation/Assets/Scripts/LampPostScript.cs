@@ -10,7 +10,7 @@ public class LampPostScript : MonoBehaviour
     [SerializeField]
     private GameObject pointLight;
 
-    public void setLight(bool value)
+    public void SetLight(bool value)
     {
         spotLight.SetActive(value);
         pointLight.SetActive(value);

@@ -9,7 +9,7 @@ public class SwapableAssetScript : MonoBehaviour
     [SerializeField]
     private Mesh flatMesh;
 
-    public void setFlatMesh(bool value)
+    public void SetFlatMesh(bool value)
     {
           GetComponent<MeshFilter>().mesh = value ? flatMesh: smoothMesh;
     }
