@@ -8,15 +8,27 @@ public class DayNightSwitcher : MonoBehaviour
     private Material skyBoxDay;
     [SerializeField]
     private Material skyBoxNight;
+    [SerializeField]
+    private Color ambientColorDay = new Color(0.84f, 0.85f, 0.86f);
+    [SerializeField]
+    private Color ambientColorNight = new Color(0.04f, 0.04f, 0.1f);
 
-    private bool isDay;
+
+    private static bool isDay = true;
 
     private LampPostScript[] lampPosts;
 
     private void Start()
     {
         lampPosts = FindObjectsOfType<LampPostScript>();
-        SetDay();
+        if (isDay)
+        {
+            SetDay();
+        }
+        else
+        {
+            SetNight();
+        }
     }
 
     private void Update()
@@ -41,7 +53,7 @@ public class DayNightSwitcher : MonoBehaviour
             lampPost.SetLight(false);
         }
         RenderSettings.skybox = skyBoxDay;
-        RenderSettings.ambientLight = new Color(0.84f, 0.85f, 0.86f);
+        RenderSettings.ambientLight = ambientColorDay;
     }
 
     public void SetNight()
@@ -52,7 +64,7 @@ public class DayNightSwitcher : MonoBehaviour
             lampPost.SetLight(true);
         }
         RenderSettings.skybox = skyBoxNight;
-        RenderSettings.ambientLight = new Color(0.04f, 0.04f, 0.1f);
+        RenderSettings.ambientLight = ambientColorNight;
     }
 
     public bool IsDay()
