@@ -3,10 +3,24 @@ Unity 3D project with an interactive scene that represents a futuristic city whi
 To represent glitches in the simulation, various visual computing concepts are played with, namely lighting, shading, transformations and camera projection.
 
 Authors: [Miguel Monteiro](https://github.com/Exodus09) and [Zé Santos](https://github.com/Zironix00)
+### Instructions
+1. Open the project folder in Unity (ver. 2021.3.15f1 or compatible)
+
+2. Open the scene "CityScene" located in "..\Assets\Scenes"
+
+3. Run the scene in the Unity editor (click inside the viewport window to hide the mouse cursor)
+
+### Controls
+| Key(s)             | Action           |
+| ------------------ | ---------------- |
+| WASD or Arrow Keys | Move around      |
+| Mouse              | Look around      |
+| Spacebar           | Jump             |
+| E                  | Interact         |
 
 ### Debug Keys
 | Key | Function                 |
-| ----| ------------------------ |
+| --- | ------------------------ |
 | 0   | Enable/disable glitches  |
 | 1   | Use flat shading         |
 | 2   | Use vertex shading       |
