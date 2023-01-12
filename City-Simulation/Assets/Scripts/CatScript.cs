@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class CatScript : MonoBehaviour
 {
+
+    private bool canMove = false;
+
     private Transform catTransform;
 
     private void Start()
@@ -13,6 +16,14 @@ public class CatScript : MonoBehaviour
 
     private void FixedUpdate()
     {
-        catTransform.position -= new Vector3(-15f * Time.deltaTime, 0, 0);
+        if (canMove)
+        {
+            catTransform.position -= new Vector3(-15f * Time.deltaTime, 0, 0);
+        }
+    }
+
+    public void SetCanMove(bool value)
+    {
+        canMove = value;
     }
 }

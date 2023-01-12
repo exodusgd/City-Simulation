@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 3591565813963912937}
   - component: {fileID: 3430315923872166268}
   - component: {fileID: 1607971783365047086}
-  - component: {fileID: 5618600405803616641}
   m_Layer: 0
   m_Name: Strecha.001
   m_TagString: Untagged
@@ -84,22 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &5618600405803616641
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6725493443042144387}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smoothMesh: {fileID: 7255996391455926656, guid: bfb1024f72615fc44b24c6bc6d99576c,
-    type: 3}
-  flatMesh: {fileID: 7255996391455926656, guid: 83e01ee561685134ead82b2cb7a3ed05,
-    type: 3}
 --- !u!1 &8542349765618322705
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,7 +94,6 @@ GameObject:
   - component: {fileID: 8141318693918523807}
   - component: {fileID: 3430772116679768012}
   - component: {fileID: 3784580767044952480}
-  - component: {fileID: 6395013985997899497}
   m_Layer: 0
   m_Name: Warehouse.001
   m_TagString: Untagged
@@ -184,22 +166,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &6395013985997899497
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8542349765618322705}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smoothMesh: {fileID: -3812361030362503480, guid: bfb1024f72615fc44b24c6bc6d99576c,
-    type: 3}
-  flatMesh: {fileID: -3812361030362503480, guid: 83e01ee561685134ead82b2cb7a3ed05,
-    type: 3}
 --- !u!1 &8564732235335139120
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +175,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 9049941925474117002}
+  - component: {fileID: 2261694560475481102}
+  - component: {fileID: 7592348233121687557}
   m_Layer: 0
   m_Name: Warehouse
   m_TagString: Untagged
@@ -234,6 +202,32 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!65 &2261694560475481102
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564732235335139120}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2.12, z: 2}
+  m_Center: {x: 2.04, y: 1.08, z: -1.43}
+--- !u!114 &7592348233121687557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8564732235335139120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65948d8dc3867204a825ce1f3cb7187f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cat: {fileID: 0}
 --- !u!1 &8724495378499776424
 GameObject:
   m_ObjectHideFlags: 0
@@ -245,7 +239,6 @@ GameObject:
   - component: {fileID: 8055211847425301431}
   - component: {fileID: 3875304584129476266}
   - component: {fileID: 711323397956660327}
-  - component: {fileID: 8032453918228244294}
   m_Layer: 0
   m_Name: Podlaha.001
   m_TagString: Untagged
@@ -318,19 +311,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8032453918228244294
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8724495378499776424}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 662e69cdfe6541c45bd6718f49948937, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  smoothMesh: {fileID: -7251349395320907095, guid: bfb1024f72615fc44b24c6bc6d99576c,
-    type: 3}
-  flatMesh: {fileID: -7251349395320907095, guid: 83e01ee561685134ead82b2cb7a3ed05,
-    type: 3}
