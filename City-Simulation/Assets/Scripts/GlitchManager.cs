@@ -77,10 +77,24 @@ public class GlitchManager : MonoBehaviour
         }
     }
 
-    IEnumerator SetOrthographic(bool value, float delayTime)
+    IEnumerator LerpFOVDelay(float startValue, float endValue, float delayTime)
     {
         yield return new WaitForSeconds(delayTime);
-        playerCamera.orthographic = value;
+        StartCoroutine(LerpFOV(startValue, endValue));
+    }
+
+
+    IEnumerator LerpFOV(float startValue, float endValue)
+    {
+        float timeElapsed = 0;
+        float duration = 0.5f;
+        while (timeElapsed < duration)
+        {
+            playerCamera.fieldOfView = Mathf.Lerp(startValue, endValue, timeElapsed / duration);
+            timeElapsed += Time.deltaTime;
+            yield return null;
+        }
+        playerCamera.fieldOfView = endValue;
     }
 
     private void GlitchChance()
@@ -123,11 +137,9 @@ public class GlitchManager : MonoBehaviour
                 StartCoroutine(GlitchDelay(3f));
                 break;
             case 3:
-                playerCamera.orthographic = true;
-                StartCoroutine(SetOrthographic(false, 2f));
-                StartCoroutine(SetOrthographic(true, 3f));
-                StartCoroutine(SetOrthographic(false, 3.5f));
-                StartCoroutine(GlitchDelay(3.5f));
+                StartCoroutine(LerpFOV(60, 90));
+                StartCoroutine(LerpFOVDelay(90, 60, 3.5f));
+                StartCoroutine(GlitchDelay(4f));
                 break;
             default:
                 break;
