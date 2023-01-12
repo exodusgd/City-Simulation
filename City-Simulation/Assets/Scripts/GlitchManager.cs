@@ -36,7 +36,13 @@ public class GlitchManager : MonoBehaviour
 
     void Update()
     {
-        if (!isInDelay && !isGlitching && debugCanGlitch) 
+        if (Input.GetKeyDown(KeyCode.Alpha0))
+        {
+            debugCanGlitch = !debugCanGlitch;
+            Debug.Log("Glitches set to " + debugCanGlitch);
+        }
+
+        if (!isInDelay && !isGlitching && debugCanGlitch)
         {
             StartCoroutine(GlitchChanceDelay(1f));
         }
