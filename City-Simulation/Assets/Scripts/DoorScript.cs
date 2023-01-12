@@ -7,6 +7,8 @@ public class DoorScript : MonoBehaviour
 {
     [SerializeField]
     private GameObject interactionText;
+    [SerializeField]
+    private GameObject player;
 
     private bool isPlayerInArea = false;
     private static Vector3 citySpawnPosition = Vector3.zero;
@@ -18,7 +20,7 @@ public class DoorScript : MonoBehaviour
         dayNightSwitcher = FindObjectOfType<DayNightSwitcher>();
         if (citySpawnPosition != Vector3.zero && SceneManager.GetActiveScene().name == "CityScene")
         {
-            FindObjectOfType<PlayerMovement>().transform.position = citySpawnPosition;
+            player.transform.position = citySpawnPosition;
         }
     }
 
@@ -30,7 +32,7 @@ public class DoorScript : MonoBehaviour
             {
                 if (SceneManager.GetActiveScene().name == "CityScene")
                 {
-                    citySpawnPosition = FindObjectOfType<PlayerMovement>().transform.position;
+                    citySpawnPosition = player.transform.position;
                 }
                 SwitchScene();
             }

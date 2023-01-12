@@ -9,6 +9,8 @@ public class DayNightSwitcher : MonoBehaviour
     [SerializeField]
     private Material skyBoxNight;
     [SerializeField]
+    private GameObject directionalLight;
+    [SerializeField]
     private Color ambientColorDay = new Color(0.84f, 0.85f, 0.86f);
     [SerializeField]
     private Color ambientColorNight = new Color(0.04f, 0.04f, 0.1f);
@@ -54,6 +56,10 @@ public class DayNightSwitcher : MonoBehaviour
         }
         RenderSettings.skybox = skyBoxDay;
         RenderSettings.ambientLight = ambientColorDay;
+        if (directionalLight)
+        {
+            directionalLight.SetActive(true);
+        }
     }
 
     public void SetNight()
@@ -65,6 +71,10 @@ public class DayNightSwitcher : MonoBehaviour
         }
         RenderSettings.skybox = skyBoxNight;
         RenderSettings.ambientLight = ambientColorNight;
+        if (directionalLight)
+        {
+            directionalLight.SetActive(false);
+        }
     }
 
     public bool IsDay()
