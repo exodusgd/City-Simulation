@@ -1,8 +1,9 @@
 # City-Simulation
-Unity 3D project with an interactive scene that represents a futuristic city which exists inside a simulation. 
-To represent glitches in the simulation, various visual computing concepts are played with, namely lighting, shading, transformations and camera projection.
+Unity 3D project with an interactive scene representing a futuristic city inside a simulation. 
 
-Authors: [Miguel Monteiro](https://github.com/Exodus09) and [Zé Santos](https://github.com/Zironix00)
+Various visual computing concepts are played with to represent glitches in the simulation, namely lighting, shading, transformations, and camera projection.
+
+Authors: [Miguel Monteiro](https://github.com/exodusgd) and [Zé Santos](https://github.com/Zironix00)
 ### Instructions
 1. Open the project folder in Unity (ver. 2021.3.15f1 or compatible)
 
